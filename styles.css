@@ -1,0 +1,46 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+}
+button { 
+    margin: 5px; 
+    padding: 5px 10px; 
+}
+.comment { 
+    border-bottom: 1px solid #ddd; 
+    padding: 10px; 
+}
+.pro { 
+    background: 
+    lightgreen; 
+}
+.anti { 
+    background: 
+    lightcoral; 
+}
+.neutral { 
+    background: 
+    lightgray; 
+}
+
+.comment.pro { 
+    background-color: rgba(144, 238, 144, 0.3); 
+}
+.comment.anti { 
+    background-color: rgba(240, 128, 128, 0.3); 
+}
+.comment.neutral { 
+    background-color: rgba(211, 211, 211, 0.3); 
+}
+
+button.pro:hover { 
+    background-color: lightgreen; 
+}
+button.anti:hover { 
+    background-color: 
+    lightcoral; 
+}
+button.neutral:hover { 
+    background-color: 
+    lightgray; 
+}
