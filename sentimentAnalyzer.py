@@ -92,19 +92,5 @@ def label_comment():
     
     return jsonify({"message": "Label updated!"})
 
-@app.route("/analyze_sentiment", methods=["GET"])
-def analyze_sentiment():
-    lexicon = {"good": 1, "bad": -1, "neutral": 0}
-    
-    comments = load_comments()
-    for comment in comments:
-        words = re.findall(r"\b\w+\b", comment["text"].lower())
-        score = sum(lexicon.get(word, 0) for word in words)
-        comment["sentiment_score"] = score
-        comment["sentiment"] = "pro" if score > 0 else "anti" if score < 0 else "neutral"
-    
-    save_comments(comments)
-    return jsonify(comments)
-
 if __name__ == "__main__":
     app.run(debug=True)
