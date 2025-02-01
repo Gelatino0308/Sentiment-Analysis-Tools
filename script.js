@@ -50,7 +50,6 @@ function loadComments() {
         });
     });
 }
-
 function labelComment(index, label) {
     fetch('http://127.0.0.1:5000/label_comment', {
         method: 'POST',

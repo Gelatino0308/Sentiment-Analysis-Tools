@@ -5,22 +5,31 @@ body {
 button { 
     margin: 5px; 
     padding: 5px 10px; 
+    border-radius: 8px;
 }
+
+h2 {
+    text-align: center;
+}
+
+.scraper-input {
+    display: flex;
+    justify-content: center;
+}
+
+
 .comment { 
     border-bottom: 1px solid #ddd; 
     padding: 10px; 
 }
 .pro { 
-    background: 
-    lightgreen; 
+    background-color: green;
 }
 .anti { 
-    background: 
-    lightcoral; 
+    background-color: red;
 }
 .neutral { 
-    background: 
-    lightgray; 
+    background-color: yellow; 
 }
 
 .comment.pro { 
@@ -30,17 +39,15 @@ button {
     background-color: rgba(240, 128, 128, 0.3); 
 }
 .comment.neutral { 
-    background-color: rgba(211, 211, 211, 0.3); 
+    background-color: rgba(230, 229, 187, 0.749); 
 }
 
-button.pro:hover { 
+.comment.pro:hover { 
     background-color: lightgreen; 
 }
-button.anti:hover { 
-    background-color: 
-    lightcoral; 
+.comment.anti:hover { 
+    background-color: lightcoral; 
 }
-button.neutral:hover { 
-    background-color: 
-    lightgray; 
+.comment.neutral:hover { 
+    background-color: yellow; 
 }
